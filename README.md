@@ -20,7 +20,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
   1. [Other Great References](#references)
 
 
-####[[⬆]](#toc) <a name='contributors'>Contributors:</a>
+#### [[⬆]](#toc) <a name='contributors'>Contributors:</a>
 
 * [moregeek](https://github.com/moregeek)
 * [typhonius](https://github.com/typhonius)
@@ -32,9 +32,10 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * [biyanisuraj](https://github.com/biyanisuraj)
 * [pedroguima](https://github.com/pedroguima)
 * Ben
+* [bharatnc](https://github.com/bharatnc)
 
 
-####[[⬆]](#toc) <a name='general'>General Questions:</a>
+#### [[⬆]](#toc) <a name='general'>General Questions:</a>
 
 * What did you learn yesterday/this week?
 * Talk about your preferred development/administration environment. (OS, Editor, Browsers, Tools etc.)
@@ -49,15 +50,16 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What is RAID? What is RAID0, RAID1, RAID5, RAID10?
 * What is a level 0 backup? What is an incremental backup?
 * Describe the general file system hierarchy of a Linux system.
+* Which difference have between public and private SSH key?
 
 
-####[[⬆]](#toc) <a name='simple'>Simple Linux Questions:</a>
+#### [[⬆]](#toc) <a name='simple'>Simple Linux Questions:</a>
 
 * What is the name and the UID of the administrator user?
 * How to list all files, including hidden ones, in a directory?
 * What is the Unix/Linux command to remove a directory and its contents?
 * Which command will show you free/used memory? Does free memory exist on Linux?
-* How to search for the string "my konfi is the best" in files of a directory recursively?
+* How to search for the string "my konfu is the best" in files of a directory recursively?
 * How to connect to a remote server or what is SSH?
 * How to get all environment variables and how can you use them?
 * I get "command not found" when I run ```ifconfig -a```. What can be wrong?
@@ -65,7 +67,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What command will show the available disk space on the Unix/Linux system?
 * What commands do you know that can be used to check DNS records?
 * What Unix/Linux commands will alter a files ownership, files permissions?
-* What does ```chmod +x FILENAME```do?
+* What does ```chmod +x FILENAME``` do?
 * What does the permission 0750 on a file mean?
 * What does the permission 0750 on a directory mean?
 * How to add a new system user without login permissions?
@@ -73,15 +75,20 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What is a bash alias?
 * How do you set the mail address of the root/a user?
 * What does CTRL-c do?
+* What does CTRL-d do?
+* What does CTRL-z do?
 * What is in /etc/services?
 * How to redirect STDOUT and STDERR in bash? (> /dev/null 2>&1)
 * What is the difference between UNIX and Linux.
 * What is the difference between Telnet and SSH?
-* Explain the three load averages and what do they indicate.
+* Explain the three load averages and what do they indicate. What command can be used to view the load averages?
 * Can you name a lower-case letter that is not a valid option for GNU ```ls```?
+* What is a Linux kernel module?
+* Walk me through the steps in booting into single user mode to troubleshoot a problem.
+* Walk me through the steps you'd take to troubleshoot a 404 error on a web application you administer.
+* What is ICMP protocol? Why do you need to use?
 
-
-####[[⬆]](#toc) <a name='medium'>Medium Linux Questions:</a>
+#### [[⬆]](#toc) <a name='medium'>Medium Linux Questions:</a>
 
 * What do the following commands do and how would you use them?
  * ```tee```
@@ -94,6 +101,13 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
  * ```watch```
  * ```head```
  * ```tail```
+ * ```less```
+ * ```cat```
+ * ```touch```
+ * ```sar```
+ * ```netstat```
+ * ```tcpdump```
+ * ```lsof```
 * What does an ```&``` after a command do?
 * What does ```& disown``` after a command do?
 * What is a packet filter and how does it work?
@@ -141,8 +155,12 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What is bash quick substitution/caret replace(^x^y)?
 * Do you know of any alternative shells? If so, have you used any?
 * What is a tarpipe (or, how would you go about copying everything, including hardlinks and special files, from one server to another)?
+* How can you tell if the httpd package was already installed?
+* How can you list the contents of a package?
+* How can you determine which package is better: openssh-server-5.3p1-118.1.el6_8.x86_64 or openssh-server-6.6p1-1.el6.x86_64 ?
+* Can you explain to me the difference between block based, and object based storage?
 
-####[[⬆]](#toc) <a name='hard'>Hard Linux Questions:</a>
+#### [[⬆]](#toc) <a name='hard'>Hard Linux Questions:</a>
 
 * What is a tunnel and how you can bypass a http proxy?
 * What is the difference between IDS and IPS?
@@ -163,14 +181,21 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What's LD_PRELOAD and when it's used?
 * You ran a binary and nothing happened. How would you debug this?
 * What are cgroups? Can you specify a scenario where you could use them?
+* How can you remove/delete a file with file-name consisting of only non-printable/non-type-able characters?
+* How can you increase or decrease the priority of a process in Linux?
+* What are run-levels in Linux?
 
 
-####[[⬆]](#toc) <a name='expert'>Expert Linux Questions:</a>
+#### [[⬆]](#toc) <a name='expert'>Expert Linux Questions:</a>
 
 * A running process gets ```EAGAIN: Resource temporarily unavailable``` on reading a socket. How can you close this bad socket/file descriptor without killing the process?
+* What do you control with swapiness?
+* How do you change TCP stack buffers? How do you calculate it?
+* What is Huge Tables? Why isn't it enabled by default? Why and when use it?
+* What is LUKS? How to use it?
 
 
-####[[⬆]](#toc) <a name='network'>Networking Questions:</a>
+#### [[⬆]](#toc) <a name='network'>Networking Questions:</a>
 
 * What is localhost and why would ```ping localhost``` fail?
 * What is the similarity between "ping" & "traceroute" ? How is traceroute able to find the hops.
@@ -185,15 +210,17 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * A TCP connection on a network can be uniquely defined by 4 things. What are those things?
 * When a client running a web browser connects to a web server, what is the source port and what is the destination port of the connection?
 * How do you add an IPv6 address to a specific interface?
-* You have added an IPv4 and IPv6 address to interface eth0. A ping to the v4 address is working but a ping to the v6 address gives yout the response ```sendmsg: operation not permitted```. What could be wrong?
+* You have added an IPv4 and IPv6 address to interface eth0. A ping to the v4 address is working but a ping to the v6 address gives you the response ```sendmsg: operation not permitted```. What could be wrong?
 * What is SNAT and when should it be used?
 * Explain how could you ssh login into a Linux system that DROPs all new incoming packets using a SSH tunnel.
 * How do you stop a DDoS attack?
 * How can you see content of an ip packet?
 * What is IPoAC (RFC 1149)?
+* What will happen when you bind port 0?
 
 
-####[[⬆]](#toc) <a name='mysql'>MySQL questions:</a>
+
+#### [[⬆]](#toc) <a name='mysql'>MySQL questions:</a>
 
 * How do you create a user?
 * How do you provide privileges to a user?
@@ -202,9 +229,9 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * Describe briefly the steps you need to follow in order to create a simple master/slave cluster.
 * Why should you run "mysql_secure_installation" after installing MySQL?
 * How do you check which jobs are running?
+* How would you take a backup of a MySQL database?
 
-
-####[[⬆]](#toc) <a name='devop'>DevOps Questions:</a>
+#### [[⬆]](#toc) <a name='devop'>DevOps Questions:</a>
 
 * Can you describe your workflow when you create a script?
 * What is GIT?
@@ -212,6 +239,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What does "./configure && make && make install" do?
 * What is puppet/chef/ansible used for?
 * What is Nagios/Zenoss/NewRelic used for?
+* What is Jenkins/TeamCity/GoCI used for?
 * What is the difference between Containers and VMs?
 * How do you create a new postgres user?
 * What is a virtual IP address? What is a cluster?
@@ -222,8 +250,9 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * What are the advantages/disadvantages of script vs compiled program?
 * What's the relationship between continuous delivery and DevOps?
 * What are the important aspects of a system of continuous integration and deployment?
+* How would you enable network file sharing within AWS that would allow EC2 instances in multiple availability zones to share data?
 
-####[[⬆]](#toc) <a name='fun'>Fun Questions:</a>
+#### [[⬆]](#toc) <a name='fun'>Fun Questions:</a>
 
 * A careless sysadmin executes the following command: ```chmod 444 /bin/chmod ``` - what do you do to fix this?
 * I've lost my root password, what can I do?
@@ -233,9 +262,10 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * Tell me about a creative way that you've used SSH?
 * You have deleted by error a running script, what could you do to restore it?
 * What will happen on 19 January 2038?
+* How to reboot server when reboot command is not responding?
 
 
-####[[⬆]](#toc) <a name='demo'>Demo Time:</a>
+#### [[⬆]](#toc) <a name='demo'>Demo Time:</a>
 
 * Unpack test.tar.gz without man pages or google.
 * Remove all "*.pyc" files from testdir recursively?
@@ -251,7 +281,7 @@ A collection of linux sysadmin/devops interview questions. Feel free to contribu
 * In a log file with contents as ```<TIME> : [MESSAGE] : [ERROR_NO] - Human readable text``` display summary/count of specific error numbers that occurred every hour or a specific hour.
 
 
-####[[⬆]](#toc) <a name='references'>Other Great References:</a>
+#### [[⬆]](#toc) <a name='references'>Other Great References:</a>
 
 Some questions are 'borrowed' from other great references like:
 
